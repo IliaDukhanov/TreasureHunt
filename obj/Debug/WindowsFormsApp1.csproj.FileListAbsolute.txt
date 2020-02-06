@@ -1,0 +1,29 @@
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\bin\Debug\WindowsFormsApp1.exe
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\obj\Debug\WindowsFormsApp1.exe
+C:\Users\dmitryeginov\Downloads\TreasureHunt-master\TreasureHunt-master\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\bin\Debug\WindowsFormsApp1.exe
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.exe
+C:\Users\iliad\Documents\Visual Studio 2017\Projects\TreasureHunt\obj\Debug\WindowsFormsApp1.pdb
