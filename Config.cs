@@ -3,12 +3,12 @@
     //Инициализация начальных значений переменных
     public static class Config                             
     {   
-        public const int startAreaOfHydro = 9;
-        public const int startHydroCount = 20;
-        public const int startTreasureCount = 3;
-        public const int startColumnCount = 60;
-        public const int startRowCount= 15;
-        public const int treasureOutOfRange = 999;
-        public const int treasureInRange = 500;
+        public const int StartAreaOfHydro = 9;
+        public const int StartHydroCount = 20;
+        public const int StartTreasureCount = 3;
+        public const int StartColumnCount = 60;
+        public const int StartRowCount= 15;
+        public const int TreasureOutOfRange = 999;
+        public const int TreasureInRange = 500;
     }
 }

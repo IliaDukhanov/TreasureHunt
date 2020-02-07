@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
 
         public Point FindTreasure(List<Treasure> treasures)
         {
-            Point foundedTreasure = new Point(Config.treasureOutOfRange, Config.treasureOutOfRange);
+            Point foundedTreasure = new Point(Config.TreasureOutOfRange, Config.TreasureOutOfRange);
             for (int i = 0; i < treasures.Count; i++)
             {
                 //Проверка входит ли очередное сокровище из коллекции в зону поиска
