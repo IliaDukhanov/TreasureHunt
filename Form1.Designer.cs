@@ -41,9 +41,9 @@
             this.area = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.hydroGUI = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.treasureGUI = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.columns)).BeginInit();
@@ -58,7 +58,7 @@
             // 
             this.columns.Location = new System.Drawing.Point(655, 260);
             this.columns.Maximum = new decimal(new int[] {
-            80,
+            60,
             0,
             0,
             0});
@@ -80,6 +80,11 @@
             // rows
             // 
             this.rows.Location = new System.Drawing.Point(742, 260);
+            this.rows.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
             this.rows.Minimum = new decimal(new int[] {
             10,
             0,
@@ -240,18 +245,18 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 23);
             this.button1.TabIndex = 13;
-            this.button1.Text = "StartButton";
+            this.button1.Text = "Начать искать";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.StartButton_Click);
             // 
-            // label9
+            // hydroGUI
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(768, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(19, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "20";
+            this.hydroGUI.AutoSize = true;
+            this.hydroGUI.Location = new System.Drawing.Point(768, 12);
+            this.hydroGUI.Name = "hydroGUI";
+            this.hydroGUI.Size = new System.Drawing.Size(19, 13);
+            this.hydroGUI.TabIndex = 17;
+            this.hydroGUI.Text = "20";
             // 
             // label10
             // 
@@ -262,14 +267,14 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Гидролокаторы:";
             // 
-            // label11
+            // treasureGUI
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(760, 35);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "3";
+            this.treasureGUI.AutoSize = true;
+            this.treasureGUI.Location = new System.Drawing.Point(760, 35);
+            this.treasureGUI.Name = "treasureGUI";
+            this.treasureGUI.Size = new System.Drawing.Size(13, 13);
+            this.treasureGUI.TabIndex = 19;
+            this.treasureGUI.Text = "3";
             // 
             // label12
             // 
@@ -296,9 +301,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 429);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.treasureGUI);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.hydroGUI);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
@@ -314,7 +319,7 @@
             this.Controls.Add(this.rows);
             this.Controls.Add(this.columns);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Поиск Сокровищ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.columns)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rows)).EndInit();
@@ -341,9 +346,9 @@
         private System.Windows.Forms.NumericUpDown area;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label hydroGUI;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label treasureGUI;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
     }

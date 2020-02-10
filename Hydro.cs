@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace WindowsFormsApp1
 {
-    class Hydro:Treasure
+    class Hydro:GameObject
     {
         //Класс гидролокатора хранит переменную зоны
         //поиска, координат и метод поиска ближайшего сокровища

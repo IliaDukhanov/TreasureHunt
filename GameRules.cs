@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -58,7 +55,7 @@ namespace WindowsFormsApp1
 
         public bool InArea(DataGridView gameField)
         {
-            foundedTreasure = hydros.Last().FindTreasure(treasures);
+            foundedTreasure = hydros[hydros.Count - 1].FindTreasure(treasures);
             //Теперь проверяем находится ли найденное сокровище в зоне поиска гидролокатора
             if ((foundedTreasure.X < Config.TreasureInRange) && (foundedTreasure.Y < Config.TreasureInRange))
                 return true;
@@ -70,10 +67,10 @@ namespace WindowsFormsApp1
         {
             //Проверяем в каком направлении от гидролокатора находится ближайшее
             //сокровище(для того чтобы понять по чему вести рассчет: по абсциссе или ординате)
-            if (Math.Abs(foundedTreasure.X - hydros.Last().Position.X) > Math.Abs(foundedTreasure.Y - hydros.Last().Position.Y))
+            if (Math.Abs(foundedTreasure.X - hydros[hydros.Count - 1].Position.X) > Math.Abs(foundedTreasure.Y - hydros[hydros.Count - 1].Position.Y))
             //Выводим на клетку игрового поля расстояние до найденного сокровища(модуль разницы координат по абсциссе)
-                gameField[hydros.Last().Position.Y, hydros.Last().Position.X].Value = Math.Abs(foundedTreasure.X - hydros.Last().Position.X);
-            else if ((foundedTreasure == hydros.Last().Position) && (player.TreasureCount > 0))
+                gameField[hydros[hydros.Count - 1].Position.Y, hydros[hydros.Count - 1].Position.X].Value = Math.Abs(foundedTreasure.X - hydros[hydros.Count - 1].Position.X);
+            else if ((foundedTreasure == hydros[hydros.Count - 1].Position) && (player.TreasureCount > 0))
             {
                 //Случай, когда гидролокатор поставлен на сокровище(в клетке выводится расстояние 0)
                 gameField[foundedTreasure.Y, foundedTreasure.X].Value = 0;
@@ -85,7 +82,7 @@ namespace WindowsFormsApp1
             }
             else
             //Выводим на клетку игрового поля расстояние до найденного сокровища(модуль разницы координат по ординате)
-                gameField[hydros.Last().Position.Y, hydros.Last().Position.X].Value = Math.Abs(foundedTreasure.Y - hydros.Last().Position.Y);
+                gameField[hydros[hydros.Count - 1].Position.Y, hydros[hydros.Count - 1].Position.X].Value = Math.Abs(foundedTreasure.Y - hydros[hydros.Count - 1].Position.Y);
 
         }
 
@@ -103,7 +100,7 @@ namespace WindowsFormsApp1
                         gameField[hydros[i].Position.Y, hydros[i].Position.X].Value = Math.Abs(foundedTreasure.Y - hydros[i].Position.Y);
                 }
                 else if (!gameField[hydros[i].Position.Y, hydros[i].Position.X].Value.Equals(0))
-                    gameField[hydros[i].Position.Y, hydros[i].Position.X].Value = 'X';
+                    gameField[hydros[i].Position.Y, hydros[i].Position.X].Value = Config.AreaClear;
             }
         }
 
@@ -126,7 +123,7 @@ namespace WindowsFormsApp1
                 for (int i = 0; i < treasures.Count; i++)
                 {
                     //Отмечаем невыловленные сокровища
-                    gameField[treasures[i].Position.Y, treasures[i].Position.X].Value = 'T';
+                    gameField[treasures[i].Position.Y, treasures[i].Position.X].Value = Config.TreasureNotFounded;
                 }
                 return true;
             }

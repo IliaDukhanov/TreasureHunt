@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -26,12 +23,14 @@ namespace WindowsFormsApp1
         {
             //Количество столбцов игрового поля
             gameField.ColumnCount = (int)columns.Value;
+            ClearField();
         }
 
         private void Rows_ValueChanged(object sender, EventArgs e)
         {
             //Количество строк игрового поля
             gameField.RowCount = (int)rows.Value;
+            ClearField();
         }
 
         private void Hydro_ValueChanged(object sender, EventArgs e)
@@ -71,7 +70,7 @@ namespace WindowsFormsApp1
                 }
                 else
                     //Если найденное сокровище не в зоне поиска гидролокатора то помечаем клетку символом 'Х'
-                    gameField[game.Hydros.Last().Position.Y, game.Hydros.Last().Position.X].Value = 'X';
+                    gameField[game.Hydros[game.Hydros.Count-1].Position.Y, game.Hydros[game.Hydros.Count - 1].Position.X].Value = Config.AreaClear;
                 //Обновляем значевния в GUI
                 RefreshGUI();
                 //Проверяем нет ли условий поражения или победы
@@ -83,8 +82,8 @@ namespace WindowsFormsApp1
         public void RefreshGUI()
         {
             //Выводим количество локаторов и сокровищ на GUI
-            label9.Text = game.Player.HydroCount.ToString();
-            label11.Text = game.Player.TreasureCount.ToString();
+            hydroGUI.Text = game.Player.HydroCount.ToString();
+            treasureGUI.Text = game.Player.TreasureCount.ToString();
         }
 
         public void StartGame(bool start)
@@ -101,21 +100,28 @@ namespace WindowsFormsApp1
                 //Началась игра, очистка коллекций и поля, а также
                 //загрузка выставленных на GUI настроек пользователя
                 game.Hydros.Clear();
+                game.Treasures.Clear();
                 game.Player.HydroCount = (int)hydro.Value;
                 game.Player.TreasureCount = (int)treasure.Value;
-                for (int i = 0; i < gameField.ColumnCount; i++)
-                {
-                    for (int j = 0; j < gameField.RowCount; j++)
-                    {
-                        gameField[i, j].Value = null;
-                    }
-                }
+                ClearField();
             }
-            label9.Text = hydro.Value.ToString();
-            label11.Text = treasure.Value.ToString();
+            hydroGUI.Text = hydro.Value.ToString();
+            treasureGUI.Text = treasure.Value.ToString();
             //Спрятать сокровища
             game.HideTreasure(gameField);
             button1.Enabled = !start;
+        }
+
+        public void ClearField()
+        {
+            //Очистка игрового поля
+            for (int i = 0; i < gameField.ColumnCount; i++)
+            {
+                for (int j = 0; j < gameField.RowCount; j++)
+                {
+                    gameField[i, j].Value = null;
+                }
+            }
         }
     }
 }

@@ -2,19 +2,9 @@
 
 namespace WindowsFormsApp1
 {
-    class Treasure
+    class Treasure:GameObject
     {
         //Класс сокровищ, имеет одно поле - координаты
-        public Treasure(Point position)
-        {
-            this.position = position;
-        }
-
-        private Point position;
-        public Point Position
-        {
-            get => position;
-            set => position = value; 
-        }
+        public Treasure(Point position) : base(position) { }
     }
 }

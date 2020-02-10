@@ -10,5 +10,7 @@
         public const int StartRowCount= 15;
         public const int TreasureOutOfRange = 999;
         public const int TreasureInRange = 500;
+        public const char AreaClear = 'X';
+        public const char TreasureNotFounded = 'T';
     }
 }
